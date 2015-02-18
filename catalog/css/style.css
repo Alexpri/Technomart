@@ -8,11 +8,11 @@ body{
 }
  @font-face {
   font-family: 'symbols-technomart';
-  src: url('../symbols-technomart/font/symbols-technomart.eot?23527613');
-  src: url('../symbols-technomart/font/symbols-technomart.eot?23527613#iefix') format('embedded-opentype'),
-       url('../symbols-technomart/font/symbols-technomart.woff?23527613') format('woff'),
-       url('../symbols-technomart/font/symbols-technomart.ttf?23527613') format('truetype'),
-       url('../symbols-technomart/font/symbols-technomart.svg?23527613#symbols-technomart') format('svg');
+  src: url('../../symbols-technomart/font/symbols-technomart.eot?23527613');
+  src: url('../../symbols-technomart/font/symbols-technomart.eot?23527613#iefix') format('embedded-opentype'),
+       url('../../symbols-technomart/font/symbols-technomart.woff?23527613') format('woff'),
+       url('../../symbols-technomart/font/symbols-technomart.ttf?23527613') format('truetype'),
+       url('../../symbols-technomart/font/symbols-technomart.svg?23527613#symbols-technomart') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -46,18 +46,16 @@ a.logo:hover,
 a.logo:active{
 	background: #ca2c37;
 }
-
 .search input[type="text"]{
 	width: 220px;
-	padding-top: 14px;
-	padding-bottom: 14px;
+	padding-top: 0;
+	padding-bottom: 0;
 	padding-left: 55px;
 	padding-right: 5px;
 	margin: 0;
 	font-family: "Cuprum", sans-serif;
 	font-size: 17px;
-	line-height: 18px;
-	color: #ffffff;
+	line-height: 49px;
 	background: url("../img/input_search.jpg");
 	border: none;
 }
@@ -67,10 +65,13 @@ a.logo:active{
 .search input[type="text"]:focus{
 	font-family: "Cuprum", sans-serif;
 	font-size: 17px;
-	line-height: 18px;
+	line-height: 49px;
 	color: #000;
 	background: url("../img/input_search_active.jpg");
 }
+::-webkit-input-placeholder {color:#ddd;}
+::-moz-placeholder          {color:#bbb;}
+:-ms-input-placeholder      {color:#bbb;}
 .clearfix:after{
     content: "";
     display:table;

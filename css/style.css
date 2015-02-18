@@ -48,14 +48,14 @@ a.logo:active{
 }
 .search input[type="text"]{
 	width: 220px;
-	padding-top: 14px;
-	padding-bottom: 14px;
+	padding-top: 0;
+	padding-bottom: 0;
 	padding-left: 55px;
 	padding-right: 5px;
 	margin: 0;
 	font-family: "Cuprum", sans-serif;
 	font-size: 17px;
-	line-height: 18px;
+	line-height: 49px;
 	background: url("../img/input_search.jpg");
 	border: none;
 }
@@ -65,10 +65,13 @@ a.logo:active{
 .search input[type="text"]:focus{
 	font-family: "Cuprum", sans-serif;
 	font-size: 17px;
-	line-height: 18px;
+	line-height: 49px;
 	color: #000;
 	background: url("../img/input_search_active.jpg");
 }
+::-webkit-input-placeholder {color:#ddd;}
+::-moz-placeholder          {color:#bbb;}
+:-ms-input-placeholder      {color:#bbb;}
 .clearfix:after{
     content: "";
     display:table;
@@ -768,7 +771,7 @@ section.company li:before{
 	margin-top: -1px;
 	height: 2px;
 	width: 25px;
-	background: url("../img/sprite_li.png") no-repeat -482px -176px;
+	background-color: #ef3542;
 }
 section.company .ship{
 	margin-bottom: 20px;
